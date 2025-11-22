@@ -1,0 +1,15 @@
+baseURL = "https://mbnlink.com/"
+languageCode = "en-us"
+title = "MBN Link"
+theme = "FixIt"
+
+enableRobotsTXT = true
+
+[pagination]
+pagerSize = 10
+
+[taxonomies]
+category = "categories"
+tag      = "tags"
+
+buildFuture = true
