@@ -1,15 +1,119 @@
-baseURL = "https://mbnlink.com/"
+# ------------------------------
+# Основные настройки
+# ------------------------------
+baseURL      = "https://mbnlink.com/"
 languageCode = "en-us"
-title = "MBN Link"
-theme = "FixIt"
-
+title        = "Amazon Reviews & Marketing Strategies for Authors and Sellers"
+theme        = "FixIt"
+publishDir   = "docs"
+buildFuture  = true
+canonifyURLs = true
 enableRobotsTXT = true
 
-[pagination]
-pagerSize = 10
-
+# Таксономии
 [taxonomies]
 category = "categories"
 tag      = "tags"
 
-buildFuture = true
+# Пагинация
+[pagination]
+pagerSize = 10
+
+
+# ------------------------------
+# Автор
+# ------------------------------
+[params.author]
+name = "Amazon Reviews"
+bio  = "Author, publisher, and creator of Book Review System."
+
+
+# ------------------------------
+# Глобальные параметры FixIt
+# ------------------------------
+[params]
+subtitle    = "Ethical strategies to get more Amazon reviews"
+description = "Book Review System helps authors and FBA sellers get more ethical, Amazon-compliant reviews with practical guides, case studies, and tools."
+keywords    = "amazon book reviews, kdp reviews, fba reviews, get amazon reviews, book review system"
+
+opengraph     = true
+twitter_cards = true
+schema        = true
+
+readmore        = true
+authorbox       = true
+post_navigation = true
+post_meta       = ["author", "date", "categories"]
+postSections    = ["posts"]
+
+# Логотип
+[params.logo]
+title    = "Book Review System"
+subtitle = "Get more ethical Amazon reviews"
+
+# Цвета
+[params.style.vars]
+highlightColor = "#ff9900"
+
+# Миниатюры
+[params.thumbnail]
+visibility = ["list", "post"]
+
+
+# ------------------------------
+# Сайдбары
+# ------------------------------
+
+# 🔹 ВКЛЮЧАЕМ ЛЕВОЕ НАВИГАЦИОННОЕ МЕНЮ ФИКСИТ
+[params.sidebar.menu]
+enable = true          # включить левое меню
+sticky = true          # фиксированная позиция при скролле (можно выключить)
+width = "240px"        # ширина левой колонки (по желанию)
+
+# Правый сайдбар (можно оставить)
+[params.sidebar]
+home   = "right"
+list   = "right"
+single = "right"
+widgets = ["search", "recent", "categories", "taglist", "social"]
+
+
+# Настройки виджетов
+[params.widgets]
+recent_num         = 5
+categories_counter = true
+tags_counter       = false
+
+# Соцсети
+email = "info@book-review-system.info"
+
+
+# ------------------------------
+# Меню сайта — появится слева
+# ------------------------------
+[menu]
+
+[[menu.main]]
+name   = "Home"
+url    = "/"
+weight = 10
+
+[[menu.main]]
+name   = "Articles"
+url    = "/posts/"
+weight = 20
+
+[[menu.main]]
+name   = "Categories"
+url    = "/categories/"
+weight = 30
+
+[[menu.main]]
+name   = "Tags"
+url    = "/tags/"
+weight = 40
+
+[[menu.main]]
+name   = "About"
+url    = "/about/"
+weight = 50
