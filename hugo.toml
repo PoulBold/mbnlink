@@ -5,7 +5,6 @@ baseURL      = "https://mbnlink.com/"
 languageCode = "en-us"
 title        = "Amazon Reviews & Marketing Strategies for Authors and Sellers"
 theme        = "FixIt"
-publishDir   = "docs"
 buildFuture  = true
 canonifyURLs = true
 enableRobotsTXT = true
